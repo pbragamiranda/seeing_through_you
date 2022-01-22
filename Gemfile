@@ -32,6 +32,7 @@ gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'geocoder'
 gem 'simple_form'
+gem 'net-smtp', require: false
 
 group :development, :test do
   gem 'pry-byebug'

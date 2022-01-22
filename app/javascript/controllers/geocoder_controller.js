@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 
 export default class extends Controller {
-  static values = { apiKey: ENV['MAPBOX_API_KEY'] }
+  static values = { apiKey: String }
 
   static targets = ["address"]
 
@@ -24,4 +24,3 @@ export default class extends Controller {
   #clearInputValue() {
     this.addressTarget.value = ""
   }
-}

@@ -33,6 +33,8 @@ gem 'font-awesome-sass'
 gem 'geocoder'
 gem 'simple_form'
 gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
 
 group :development, :test do
   gem 'pry-byebug'

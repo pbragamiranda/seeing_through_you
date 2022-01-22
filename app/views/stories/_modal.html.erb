@@ -1,0 +1,24 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h1 class="modal-title" id="exampleModalLabel">SPEAK OUT LOUD!</h1>
+      </div>
+      <div class="modal-body">
+
+        <%= simple_form_for(story) do |f| %>
+          <%= f.input :plot, as: :text, :input_html => {:rows => 5}, label: 'Do you want to share your story?' %>
+          <%= f.input :location, label: 'Where did it happen?' %>
+          <%= f.input :when, label: 'When did it happen?' %>
+
+      </div>
+      <div class="modal-footer">
+          <%= f.submit "POST", class: "btn btn-outline-secondary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

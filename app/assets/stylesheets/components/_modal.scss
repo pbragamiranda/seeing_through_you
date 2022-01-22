@@ -1,0 +1,46 @@
+.modal-dialog {
+  position: absolute;
+  top: 8px;
+  right: -900px;
+  bottom: 0;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.modal-content {
+  background: #F2DFC7;
+  width: 450px;
+  height: 550px;
+  border-radius: 8px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.modal-title {
+  background: #A85430;
+  opacity: 0.7;
+  padding: 4px 16px 4px 16px;
+  border-radius: 6px;
+  font-size: 30px;
+  font-family: Jost;
+  font-weight: bold;
+  position: absolute;
+  right: -36px;
+  // margin-top: -8px;
+}
+
+.modal-body {
+  margin-top: 44px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 416px;
+  margin-top: 20px;
+}

@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'stories#index'
+  root to: 'pages#home'
+
+  resources :stories, only: [ :index ]
 end

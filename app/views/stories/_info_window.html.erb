@@ -1,2 +1,6 @@
-<h2><%= story.plot %></h2>
-<p><%= story.when %></p>
+<div class="popup">
+	<h2><%= story.plot %></h2>
+	<% unless story.when == "Unknown" %>
+		<p><%= story.when %></p>
+	<% end %> 
+</div>

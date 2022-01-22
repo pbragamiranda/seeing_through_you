@@ -1,1 +1,17 @@
-// Specific CSS for your home-page
+.img-background {
+	background-image: url("home-page.jpg");
+	width: 1920px;
+	height: 789px;
+	background-attachment: fixed;
+	background-size: 100%;
+	z-index : 1000;
+}
+
+.click {
+	position: absolute;
+	width: 480px;
+	height: 500px;
+	left: 800px;
+	top: 190px;
+	z-index : 1000;
+}

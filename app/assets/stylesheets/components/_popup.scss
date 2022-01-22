@@ -1,0 +1,26 @@
+.popup {
+	position: absolute;
+	width: 400px;
+	// height: 353px;
+	// left: 539px;
+	// top: 310px;
+	padding: 4px;
+	background: #CB987E;
+	opacity: 0.9;
+	border-radius: 6px;
+	box-shadow: -8px -12px #F3DEC4;
+}
+
+.popup h2 {
+	font-size: 13px;
+	font-family: Jost;
+	font-weight: bold;
+}
+
+// .mapboxgl-popup-anchor-bottom {
+// 	flex-direction: none !important;
+// }
+
+.mapboxgl-popup-tip {
+	border-top-color: transparent !important;
+}

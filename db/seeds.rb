@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# puts "populating db."
+
+# Story.destroy_all
+
+
+
+# filepath = "#{File.open(File.join(Rails.root, 'db')).path}/stories.csv"
+
+
+# CSV.foreach(filepath, headers: :first_row) do |row|
+#   # Here, row is an array of columns
+#   story = Story.create!(plot: row['story'], location: row['where'], when: row['when'])
+
+#   puts "#{story.id} was created."
+# end
+
+# puts "done."
+
+locations = []
+Story.all.each do |story|
+	locations << story.location if story.latitude.nil? || story.longitude.nil?
+end
+
+puts locations
+puts locations.count

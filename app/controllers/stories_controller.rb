@@ -12,4 +12,18 @@ class StoriesController < ApplicationController
       }
     end
   end
+
+  def create
+    @story = Story.new(story_params)
+    if @story.save
+      # session[:modal] = true
+      # flash[:notice] = "You story was successfully uploaded!"
+      # render partial: "/stories/confirmation"
+      redirect_to stories_path
+    end
+  end
+
+  def story_params
+    params.require(:story).permit(:plot, :location, :when)
+  end
 end

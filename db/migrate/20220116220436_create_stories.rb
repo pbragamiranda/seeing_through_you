@@ -4,6 +4,7 @@ class CreateStories < ActiveRecord::Migration[6.1]
       t.string :plot
       t.string :when
       t.string :location
+      t.boolean :active
 
       t.timestamps
     end

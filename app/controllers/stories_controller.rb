@@ -15,11 +15,10 @@ class StoriesController < ApplicationController
 
   def create
     @story = Story.new(story_params)
+    @story.active = false
     if @story.save
-      # session[:modal] = true
-      # flash[:notice] = "You story was successfully uploaded!"
-      # render partial: "/stories/confirmation"
-      redirect_to stories_path
+      redirect_to stories_path, notice: "Thank you for submitting your story. 
+                                        We will review it and post as soon as we have a chance."
     end
   end
 

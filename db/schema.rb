@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_01_16_220701) do
     t.string "plot"
     t.string "when"
     t.string "location"
+    t.boolean "active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"

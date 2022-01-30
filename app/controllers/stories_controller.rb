@@ -18,7 +18,7 @@ class StoriesController < ApplicationController
     @story.active = false
     if @story.save
       redirect_to stories_path, notice: "Thank you for submitting your story. 
-                                        We will review it and post as soon as we have a chance."
+                                        We will review and post it as soon as we have a chance."
     end
   end
 
